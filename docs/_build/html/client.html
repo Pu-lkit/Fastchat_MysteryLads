@@ -1,0 +1,363 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>client module &#8212; fastChat  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="grpencrypt module" href="grpencrypt.html" />
+    <link rel="prev" title="docs" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-client">
+<span id="client-module"></span><h1>client module<a class="headerlink" href="#module-client" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="client.add_member">
+<code class="descclassname">client.</code><code class="descname">add_member</code><span class="sig-paren">(</span><em>groupname</em>, <em>member</em>, <em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#client.add_member" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends add member request to the server.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>groupname</strong> (<em>str</em>) – name of the group in which a new member is to be added</li>
+<li><strong>member</strong> (<em>str</em>) – username of the new member to be added</li>
+<li><strong>username</strong> (<em>str</em>) – the client who is sending the command for adding member(the admin of the group)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.create_group">
+<code class="descclassname">client.</code><code class="descname">create_group</code><span class="sig-paren">(</span><em>groupname</em>, <em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#client.create_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends group creation request to the server.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>groupname</strong> (<em>str</em>) – name of the group</li>
+<li><strong>username</strong> (<em>str</em>) – the username of the client who is creating the group</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.delete_member">
+<code class="descclassname">client.</code><code class="descname">delete_member</code><span class="sig-paren">(</span><em>groupname</em>, <em>member</em>, <em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#client.delete_member" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends request to the server to remove a client from a group.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>groupname</strong> (<em>str</em>) – name of the group from which the member is to be removed</li>
+<li><strong>member</strong> (<em>str</em>) – username of the member to be removed</li>
+<li><strong>username</strong> (<em>str</em>) – the client who is sending the command for deleting the member(the admin of the group)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.disconnect">
+<code class="descclassname">client.</code><code class="descname">disconnect</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client.disconnect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends logout request to the servers.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.getServer">
+<code class="descclassname">client.</code><code class="descname">getServer</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client.getServer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Requests a server from the main_server to which the client can send command to.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">connection object to the server</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">connection object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.leave_group">
+<code class="descclassname">client.</code><code class="descname">leave_group</code><span class="sig-paren">(</span><em>groupname</em>, <em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#client.leave_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends request to the server for leaving a group.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>groupname</strong> (<em>str</em>) – the groupname of the group the client wants to leave</li>
+<li><strong>username</strong> (<em>str</em>) – the username of the client who wants to leave the group</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.loGin">
+<code class="descclassname">client.</code><code class="descname">loGin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client.loGin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends login request to the main_server which authorizes the client based on the given username and password.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.rec_image">
+<code class="descclassname">client.</code><code class="descname">rec_image</code><span class="sig-paren">(</span><em>file_type</em>, <em>server_number</em><span class="sig-paren">)</span><a class="headerlink" href="#client.rec_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Receives and saves the image sent from a client through a server. It saves the image in the currect working directory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>file_type</strong> (<em>str</em>) – The file type of the image which helps in correctly saving the image</li>
+<li><strong>server_number</strong> (<em>int</em>) – the number representing which server to listen to for receiving the image</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.rec_text">
+<code class="descclassname">client.</code><code class="descname">rec_text</code><span class="sig-paren">(</span><em>server_number</em><span class="sig-paren">)</span><a class="headerlink" href="#client.rec_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Receives the message from the servers in string format and converts it into python dictionary.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>server_number</strong> (<em>int</em>) – the server from which message is to be received</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">message</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">python dictionary</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.save_group_keys">
+<code class="descclassname">client.</code><code class="descname">save_group_keys</code><span class="sig-paren">(</span><em>msg</em><span class="sig-paren">)</span><a class="headerlink" href="#client.save_group_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the group keys that are used for encryption of messages of the group</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>msg</strong> (<em>python dictionary</em>) – contains the required keys fo storing</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.send_group_image">
+<code class="descclassname">client.</code><code class="descname">send_group_image</code><span class="sig-paren">(</span><em>msg</em>, <em>client</em><span class="sig-paren">)</span><a class="headerlink" href="#client.send_group_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a group image to be sent to each member of the group.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>msg</strong> (<em>str</em>) – image name</li>
+<li><strong>client</strong> (<em>connection object</em>) – the server connection to which the message is to be sent</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.send_group_text">
+<code class="descclassname">client.</code><code class="descname">send_group_text</code><span class="sig-paren">(</span><em>groupname</em>, <em>msg</em>, <em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#client.send_group_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a groupmessage to be broadcasted in the group</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>groupname</strong> (<em>str</em>) – name of the group in which message is to be broadcasted</li>
+<li><strong>msg</strong> (<em>str</em>) – the message to be broadcasted</li>
+<li><strong>username</strong> (<em>str</em>) – the sender</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.send_image">
+<code class="descclassname">client.</code><code class="descname">send_image</code><span class="sig-paren">(</span><em>msg</em>, <em>client</em><span class="sig-paren">)</span><a class="headerlink" href="#client.send_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends image to a different client through intermediate server</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>msg</strong> (<em>str</em>) – image name</li>
+<li><strong>client</strong> (<em>connection object</em>) – connection to the server through which image is to be sent</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.send_text">
+<code class="descclassname">client.</code><code class="descname">send_text</code><span class="sig-paren">(</span><em>msg</em>, <em>client=0</em><span class="sig-paren">)</span><a class="headerlink" href="#client.send_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends a message to the server. The message functionalities vary according to the request the client has made. It first asks the main_server to allot some server out of the many given servers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>msg</strong> (<em>dictionary</em>) – the message to be processed and sent</li>
+<li><strong>client</strong> (<em>connection object</em>) – the server to which the message is to be sent. If it is 0, then main_server is asked to return a server to which message is to be sent</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.signup">
+<code class="descclassname">client.</code><code class="descname">signup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client.signup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sends signup request to the main_server which checks whether the signup credentials are valid and if yes creates the user in the server’s database</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="client.talk">
+<code class="descclassname">client.</code><code class="descname">talk</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#client.talk" title="Permalink to this definition">¶</a></dt>
+<dd><p>The main loop function which makes our application a continuous one which can send messages and receive messages anytime</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">fastChat</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">docs</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grpencrypt.html">grpencrypt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_server.html">main_server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newencrypt.html">newencrypt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html">server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sql.html">sql module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">docs</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">docs</a></li>
+      <li>Next: <a href="grpencrypt.html" title="next chapter">grpencrypt module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, 210050126_210050125_210050105.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/client.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

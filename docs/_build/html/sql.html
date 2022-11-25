@@ -1,0 +1,450 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>sql module &#8212; fastChat  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="server module" href="server.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-sql">
+<span id="sql-module"></span><h1>sql module<a class="headerlink" href="#module-sql" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="sql.Database">
+<em class="property">class </em><code class="descclassname">sql.</code><code class="descname">Database</code><a class="headerlink" href="#sql.Database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="sql.Database.add_user_to_group">
+<code class="descname">add_user_to_group</code><span class="sig-paren">(</span><em>username</em>, <em>groupname</em>, <em>isAdmin=0</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.add_user_to_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the user with name as username to the group whose name is groupname.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> (<em>str</em>) – username of the user</li>
+<li><strong>groupname</strong> (<em>str</em>) – groupname of the user</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.authenticate">
+<code class="descname">authenticate</code><span class="sig-paren">(</span><em>username</em>, <em>password</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.authenticate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Authenticates the user with name given as username and password given as password. Used in login purposes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>username</strong> (<em>str</em>) – username of the user whose authentication is to be done</li>
+<li><strong>password</strong> (<em>str</em>) – password given by the user</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">1 on incorrect credentials and 2 on successful authentication</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">int</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.change_status">
+<code class="descname">change_status</code><span class="sig-paren">(</span><em>username</em>, <em>isOnline</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.change_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the isOnline value of a user in the database which tells whether a user is Online or Offline</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> (<em>str</em>) – username of the user</li>
+<li><strong>isOnline</strong> (<em>int</em>) – 1 if online and 0 if offline</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.check_groupname">
+<code class="descname">check_groupname</code><span class="sig-paren">(</span><em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.check_groupname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether the there exists a group with its name given exists in the databse or not.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>groupname</strong> (<em>str</em>) – groupname whose existence in the databse is to be checked</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">bool object representing whether it exists or not</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.check_user_in_group">
+<code class="descname">check_user_in_group</code><span class="sig-paren">(</span><em>username</em>, <em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.check_user_in_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether a user with name given as username is present in the group whose name is groupname.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>username</strong> (<em>str</em>) – username whose existence in the group database is to be checked</li>
+<li><strong>groupname</strong> (<em>str</em>) – groupname of the group in which existence is to be checked</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">bool object representing whether it exists or not</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.check_username">
+<code class="descname">check_username</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.check_username" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether the username given exists in the database or not.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> (<em>str</em>) – username whose existence in the databse is to be checked</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">bool object representing whether it exists or not</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.close_connection">
+<code class="descname">close_connection</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.close_connection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Closes the connection with the database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.create_group_database">
+<code class="descname">create_group_database</code><span class="sig-paren">(</span><em>groupname</em>, <em>adminuser</em>, <em>publickey=''</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.create_group_database" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the database and adds a new table for the group with name as groupname.
+Also adds the adminuser to the group’s table and adds the publicKey of the group</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>groupname</strong> (<em>str</em>) – groupname of the group</li>
+<li><strong>adminuser</strong> (<em>str</em>) – username of the admin</li>
+<li><strong>publickey</strong> (<em>str</em>) – publickey of the group</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.create_user">
+<code class="descname">create_user</code><span class="sig-paren">(</span><em>username</em>, <em>password</em>, <em>publicKey=''</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.create_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether the given username is present in the Users table or not. If it is not present then it adds that user to the database, otherwise it doesn;t update the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> (<em>str</em>) – Username of the client to be added</li>
+<li><strong>password</strong> (<em>str</em>) – encrypted for of the password of the user</li>
+<li><strong>publicKey</strong> (<em>str</em>) – publicKey of the user for E2E encryption</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.delete_user_in_group">
+<code class="descname">delete_user_in_group</code><span class="sig-paren">(</span><em>username</em>, <em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.delete_user_in_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the user with name as username from the group whose name is groupname.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> (<em>str</em>) – username of the user</li>
+<li><strong>groupname</strong> (<em>str</em>) – groupname of the user</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.get_all_users">
+<code class="descname">get_all_users</code><span class="sig-paren">(</span><em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.get_all_users" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of users in the group with name as groupname.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>groupname</strong> (<em>str</em>) – name of the group</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">list of usernames present in the group</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.get_key">
+<code class="descname">get_key</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.get_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns publicKey of the user with name as username.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> (<em>str</em>) – username of the user</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">publicKey of the user</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.get_status">
+<code class="descname">get_status</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.get_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the curent status of the user stating whether the user is online or offline</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> (<em>str</em>) – username of the user</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">isOnline (1 if online and 0 if offline)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.isAdmin">
+<code class="descname">isAdmin</code><span class="sig-paren">(</span><em>username</em>, <em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.isAdmin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether the user with name as username is the admin of the group with name as groupname.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>username</strong> (<em>str</em>) – username of the user</li>
+<li><strong>groupname</strong> (<em>str</em>) – name of the group</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">0 if it is not an Admin else 1</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">int</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.make_groups_table">
+<code class="descname">make_groups_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.make_groups_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>It creates the table Groups in the database if it wasn’t there. If it was already present, it drops that and creates a new Groups table in the database.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.make_users_table">
+<code class="descname">make_users_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.make_users_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>It creates the table Users in the database if it wasn’t there. If it was already present, it drops that and creates a new Users table in the database.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.message_ret">
+<code class="descname">message_ret</code><span class="sig-paren">(</span><em>username</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.message_ret" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gives a list of messages stored in a user’s database for transmission of messages by the server to clients who missed these messages and switched back to online from offline</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>username</strong> (<em>str</em>) – username of the user</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">list of messages</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.message_sent_to_group">
+<code class="descname">message_sent_to_group</code><span class="sig-paren">(</span><em>username</em>, <em>groupname</em>, <em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.message_sent_to_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores the messages sent to the group.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username</strong> (<em>str</em>) – username of the user</li>
+<li><strong>groupname</strong> (<em>str</em>) – name of the group</li>
+<li><strong>message</strong> (<em>str</em>) – message to be stored</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.message_sent_to_user">
+<code class="descname">message_sent_to_user</code><span class="sig-paren">(</span><em>username2</em>, <em>message</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.message_sent_to_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the message of the sent by a client to user with username as username2 and hence helps in message retrieval when the user switches back to online from offline</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>username2</strong> (<em>str</em>) – username of the user</li>
+<li><strong>message</strong> (<em>str</em>) – message to be stored</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="sql.Database.update_key">
+<code class="descname">update_key</code><span class="sig-paren">(</span><em>username</em>, <em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#sql.Database.update_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds publicKey of the user with name as username.
+:param username: username of the user
+:type username: str</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">fastChat</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">docs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="client.html">client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grpencrypt.html">grpencrypt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_server.html">main_server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newencrypt.html">newencrypt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html">server module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">sql module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">docs</a><ul>
+      <li>Previous: <a href="server.html" title="previous chapter">server module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, 210050126_210050125_210050105.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/sql.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

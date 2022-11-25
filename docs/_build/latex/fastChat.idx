@@ -1,0 +1,83 @@
+\indexentry{client (module)@\spxentry{client}\spxextra{module}|hyperpage}{1}
+\indexentry{add\_member() (in module client)@\spxentry{add\_member()}\spxextra{in module client}|hyperpage}{1}
+\indexentry{create\_group() (in module client)@\spxentry{create\_group()}\spxextra{in module client}|hyperpage}{1}
+\indexentry{delete\_member() (in module client)@\spxentry{delete\_member()}\spxextra{in module client}|hyperpage}{1}
+\indexentry{disconnect() (in module client)@\spxentry{disconnect()}\spxextra{in module client}|hyperpage}{1}
+\indexentry{getServer() (in module client)@\spxentry{getServer()}\spxextra{in module client}|hyperpage}{1}
+\indexentry{leave\_group() (in module client)@\spxentry{leave\_group()}\spxextra{in module client}|hyperpage}{1}
+\indexentry{loGin() (in module client)@\spxentry{loGin()}\spxextra{in module client}|hyperpage}{2}
+\indexentry{rec\_image() (in module client)@\spxentry{rec\_image()}\spxextra{in module client}|hyperpage}{2}
+\indexentry{rec\_text() (in module client)@\spxentry{rec\_text()}\spxextra{in module client}|hyperpage}{2}
+\indexentry{save\_group\_keys() (in module client)@\spxentry{save\_group\_keys()}\spxextra{in module client}|hyperpage}{2}
+\indexentry{send\_group\_image() (in module client)@\spxentry{send\_group\_image()}\spxextra{in module client}|hyperpage}{2}
+\indexentry{send\_group\_text() (in module client)@\spxentry{send\_group\_text()}\spxextra{in module client}|hyperpage}{2}
+\indexentry{send\_image() (in module client)@\spxentry{send\_image()}\spxextra{in module client}|hyperpage}{2}
+\indexentry{send\_text() (in module client)@\spxentry{send\_text()}\spxextra{in module client}|hyperpage}{2}
+\indexentry{signup() (in module client)@\spxentry{signup()}\spxextra{in module client}|hyperpage}{3}
+\indexentry{talk() (in module client)@\spxentry{talk()}\spxextra{in module client}|hyperpage}{3}
+\indexentry{grpencrypt (module)@\spxentry{grpencrypt}\spxextra{module}|hyperpage}{3}
+\indexentry{genkeys() (in module grpencrypt)@\spxentry{genkeys()}\spxextra{in module grpencrypt}|hyperpage}{3}
+\indexentry{group\_decrypt() (in module grpencrypt)@\spxentry{group\_decrypt()}\spxextra{in module grpencrypt}|hyperpage}{3}
+\indexentry{group\_encrypt() (in module grpencrypt)@\spxentry{group\_encrypt()}\spxextra{in module grpencrypt}|hyperpage}{3}
+\indexentry{private\_key\_getting() (in module grpencrypt)@\spxentry{private\_key\_getting()}\spxextra{in module grpencrypt}|hyperpage}{3}
+\indexentry{private\_key\_storing() (in module grpencrypt)@\spxentry{private\_key\_storing()}\spxextra{in module grpencrypt}|hyperpage}{3}
+\indexentry{public\_key\_getting() (in module grpencrypt)@\spxentry{public\_key\_getting()}\spxextra{in module grpencrypt}|hyperpage}{4}
+\indexentry{public\_key\_storing() (in module grpencrypt)@\spxentry{public\_key\_storing()}\spxextra{in module grpencrypt}|hyperpage}{4}
+\indexentry{main\_server (module)@\spxentry{main\_server}\spxextra{module}|hyperpage}{4}
+\indexentry{acceptClient() (in module main\_server)@\spxentry{acceptClient()}\spxextra{in module main\_server}|hyperpage}{4}
+\indexentry{bindSocket() (in module main\_server)@\spxentry{bindSocket()}\spxextra{in module main\_server}|hyperpage}{4}
+\indexentry{createServer() (in module main\_server)@\spxentry{createServer()}\spxextra{in module main\_server}|hyperpage}{4}
+\indexentry{disconnect() (in module main\_server)@\spxentry{disconnect()}\spxextra{in module main\_server}|hyperpage}{4}
+\indexentry{loginpage() (in module main\_server)@\spxentry{loginpage()}\spxextra{in module main\_server}|hyperpage}{4}
+\indexentry{random() (in module main\_server)@\spxentry{random()}\spxextra{in module main\_server}|hyperpage}{4}
+\indexentry{rec\_query() (in module main\_server)@\spxentry{rec\_query()}\spxextra{in module main\_server}|hyperpage}{4}
+\indexentry{return\_a\_server() (in module main\_server)@\spxentry{return\_a\_server()}\spxextra{in module main\_server}|hyperpage}{5}
+\indexentry{signuppage() (in module main\_server)@\spxentry{signuppage()}\spxextra{in module main\_server}|hyperpage}{5}
+\indexentry{store\_key() (in module main\_server)@\spxentry{store\_key()}\spxextra{in module main\_server}|hyperpage}{5}
+\indexentry{talk() (in module main\_server)@\spxentry{talk()}\spxextra{in module main\_server}|hyperpage}{5}
+\indexentry{newencrypt (module)@\spxentry{newencrypt}\spxextra{module}|hyperpage}{5}
+\indexentry{decrypt() (in module newencrypt)@\spxentry{decrypt()}\spxextra{in module newencrypt}|hyperpage}{5}
+\indexentry{encrypt() (in module newencrypt)@\spxentry{encrypt()}\spxextra{in module newencrypt}|hyperpage}{5}
+\indexentry{generatekeys() (in module newencrypt)@\spxentry{generatekeys()}\spxextra{in module newencrypt}|hyperpage}{5}
+\indexentry{server (module)@\spxentry{server}\spxextra{module}|hyperpage}{6}
+\indexentry{acceptClient() (in module server)@\spxentry{acceptClient()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{add\_member() (in module server)@\spxentry{add\_member()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{bindSocket() (in module server)@\spxentry{bindSocket()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{createServer() (in module server)@\spxentry{createServer()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{create\_group() (in module server)@\spxentry{create\_group()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{delete\_member() (in module server)@\spxentry{delete\_member()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{disconnect() (in module server)@\spxentry{disconnect()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{leave\_group() (in module server)@\spxentry{leave\_group()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{loginpage() (in module server)@\spxentry{loginpage()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{message\_retrieval() (in module server)@\spxentry{message\_retrieval()}\spxextra{in module server}|hyperpage}{6}
+\indexentry{rec\_query() (in module server)@\spxentry{rec\_query()}\spxextra{in module server}|hyperpage}{7}
+\indexentry{send\_group\_image() (in module server)@\spxentry{send\_group\_image()}\spxextra{in module server}|hyperpage}{7}
+\indexentry{send\_group\_text() (in module server)@\spxentry{send\_group\_text()}\spxextra{in module server}|hyperpage}{7}
+\indexentry{send\_image() (in module server)@\spxentry{send\_image()}\spxextra{in module server}|hyperpage}{7}
+\indexentry{send\_key() (in module server)@\spxentry{send\_key()}\spxextra{in module server}|hyperpage}{7}
+\indexentry{send\_text() (in module server)@\spxentry{send\_text()}\spxextra{in module server}|hyperpage}{7}
+\indexentry{signuppage() (in module server)@\spxentry{signuppage()}\spxextra{in module server}|hyperpage}{7}
+\indexentry{store\_key() (in module server)@\spxentry{store\_key()}\spxextra{in module server}|hyperpage}{8}
+\indexentry{talk() (in module server)@\spxentry{talk()}\spxextra{in module server}|hyperpage}{8}
+\indexentry{sql (module)@\spxentry{sql}\spxextra{module}|hyperpage}{8}
+\indexentry{Database (class in sql)@\spxentry{Database}\spxextra{class in sql}|hyperpage}{8}
+\indexentry{add\_user\_to\_group() (sql.Database method)@\spxentry{add\_user\_to\_group()}\spxextra{sql.Database method}|hyperpage}{8}
+\indexentry{authenticate() (sql.Database method)@\spxentry{authenticate()}\spxextra{sql.Database method}|hyperpage}{8}
+\indexentry{change\_status() (sql.Database method)@\spxentry{change\_status()}\spxextra{sql.Database method}|hyperpage}{8}
+\indexentry{check\_groupname() (sql.Database method)@\spxentry{check\_groupname()}\spxextra{sql.Database method}|hyperpage}{8}
+\indexentry{check\_user\_in\_group() (sql.Database method)@\spxentry{check\_user\_in\_group()}\spxextra{sql.Database method}|hyperpage}{8}
+\indexentry{check\_username() (sql.Database method)@\spxentry{check\_username()}\spxextra{sql.Database method}|hyperpage}{9}
+\indexentry{close\_connection() (sql.Database method)@\spxentry{close\_connection()}\spxextra{sql.Database method}|hyperpage}{9}
+\indexentry{create\_group\_database() (sql.Database method)@\spxentry{create\_group\_database()}\spxextra{sql.Database method}|hyperpage}{9}
+\indexentry{create\_user() (sql.Database method)@\spxentry{create\_user()}\spxextra{sql.Database method}|hyperpage}{9}
+\indexentry{delete\_user\_in\_group() (sql.Database method)@\spxentry{delete\_user\_in\_group()}\spxextra{sql.Database method}|hyperpage}{9}
+\indexentry{get\_all\_users() (sql.Database method)@\spxentry{get\_all\_users()}\spxextra{sql.Database method}|hyperpage}{9}
+\indexentry{get\_key() (sql.Database method)@\spxentry{get\_key()}\spxextra{sql.Database method}|hyperpage}{9}
+\indexentry{get\_status() (sql.Database method)@\spxentry{get\_status()}\spxextra{sql.Database method}|hyperpage}{10}
+\indexentry{isAdmin() (sql.Database method)@\spxentry{isAdmin()}\spxextra{sql.Database method}|hyperpage}{10}
+\indexentry{make\_groups\_table() (sql.Database method)@\spxentry{make\_groups\_table()}\spxextra{sql.Database method}|hyperpage}{10}
+\indexentry{make\_users\_table() (sql.Database method)@\spxentry{make\_users\_table()}\spxextra{sql.Database method}|hyperpage}{10}
+\indexentry{message\_ret() (sql.Database method)@\spxentry{message\_ret()}\spxextra{sql.Database method}|hyperpage}{10}
+\indexentry{message\_sent\_to\_group() (sql.Database method)@\spxentry{message\_sent\_to\_group()}\spxextra{sql.Database method}|hyperpage}{10}
+\indexentry{message\_sent\_to\_user() (sql.Database method)@\spxentry{message\_sent\_to\_user()}\spxextra{sql.Database method}|hyperpage}{10}
+\indexentry{update\_key() (sql.Database method)@\spxentry{update\_key()}\spxextra{sql.Database method}|hyperpage}{11}

@@ -1,0 +1,7 @@
+newencrypt module
+=================
+
+.. automodule:: newencrypt
+    :members:
+    :undoc-members:
+    :show-inheritance:

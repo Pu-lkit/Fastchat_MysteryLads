@@ -1,0 +1,244 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>grpencrypt module &#8212; fastChat  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="main_server module" href="main_server.html" />
+    <link rel="prev" title="client module" href="client.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-grpencrypt">
+<span id="grpencrypt-module"></span><h1>grpencrypt module<a class="headerlink" href="#module-grpencrypt" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="grpencrypt.genkeys">
+<code class="descclassname">grpencrypt.</code><code class="descname">genkeys</code><span class="sig-paren">(</span><em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#grpencrypt.genkeys" title="Permalink to this definition">¶</a></dt>
+<dd><p>It generates and stores the private and public keys for encryption decryption purposes for the group.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>groupname</strong> (<em>str</em>) – name of the group for which keys are generated</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="grpencrypt.group_decrypt">
+<code class="descclassname">grpencrypt.</code><code class="descname">group_decrypt</code><span class="sig-paren">(</span><em>encryptedmsg</em>, <em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#grpencrypt.group_decrypt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the given encrypted message into decrypted form after transmission</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>encryptedmsg</strong> (<em>str</em>) – message to be encrypted</li>
+<li><strong>groupname</strong> (<em>str</em>) – name of the group according to which encryption is to be done</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">decrypted message</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="grpencrypt.group_encrypt">
+<code class="descclassname">grpencrypt.</code><code class="descname">group_encrypt</code><span class="sig-paren">(</span><em>msg</em>, <em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#grpencrypt.group_encrypt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the given message into encrypted form for transmission</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>msg</strong> (<em>str</em>) – message to be encrypted</li>
+<li><strong>groupname</strong> (<em>str</em>) – name of the group according to which encryption is to be done</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">encryptedstring</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">str</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="grpencrypt.private_key_getting">
+<code class="descclassname">grpencrypt.</code><code class="descname">private_key_getting</code><span class="sig-paren">(</span><em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#grpencrypt.private_key_getting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns private key of the group as a string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>groupname</strong> (<em>str</em>) – name of the group for which key is returned</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">pubkeystring</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="grpencrypt.private_key_storing">
+<code class="descclassname">grpencrypt.</code><code class="descname">private_key_storing</code><span class="sig-paren">(</span><em>groupname</em>, <em>privatestring</em><span class="sig-paren">)</span><a class="headerlink" href="#grpencrypt.private_key_storing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores the private key of the group with name as groupname in the client’s system.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>groupname</strong> (<em>str</em>) – name of the group</li>
+<li><strong>privatestring</strong> (<em>str</em>) – private key of the group</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="grpencrypt.public_key_getting">
+<code class="descclassname">grpencrypt.</code><code class="descname">public_key_getting</code><span class="sig-paren">(</span><em>groupname</em><span class="sig-paren">)</span><a class="headerlink" href="#grpencrypt.public_key_getting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns public key of the group as a string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>groupname</strong> (<em>str</em>) – name of the group for which key is returned</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">pubkeystring</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">str</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="grpencrypt.public_key_storing">
+<code class="descclassname">grpencrypt.</code><code class="descname">public_key_storing</code><span class="sig-paren">(</span><em>groupname</em>, <em>publicstring</em><span class="sig-paren">)</span><a class="headerlink" href="#grpencrypt.public_key_storing" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores the public key of the group with name as groupname in the client’s system.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>groupname</strong> (<em>str</em>) – name of the group</li>
+<li><strong>publicstring</strong> (<em>str</em>) – public key of the group</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">fastChat</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">docs</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="client.html">client module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">grpencrypt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="main_server.html">main_server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="newencrypt.html">newencrypt module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html">server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sql.html">sql module</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">docs</a><ul>
+      <li>Previous: <a href="client.html" title="previous chapter">client module</a></li>
+      <li>Next: <a href="main_server.html" title="next chapter">main_server module</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, 210050126_210050125_210050105.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.8</a>
+      
+      |
+      <a href="_sources/grpencrypt.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

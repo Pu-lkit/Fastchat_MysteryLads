@@ -1,0 +1,134 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter A
+  \item \spxentry{acceptClient()}\spxextra{in module main\_server}, \hyperpage{4}
+  \item \spxentry{acceptClient()}\spxextra{in module server}, \hyperpage{6}
+  \item \spxentry{add\_member()}\spxextra{in module client}, \hyperpage{1}
+  \item \spxentry{add\_member()}\spxextra{in module server}, \hyperpage{6}
+  \item \spxentry{add\_user\_to\_group()}\spxextra{sql.Database method}, \hyperpage{8}
+  \item \spxentry{authenticate()}\spxextra{sql.Database method}, \hyperpage{8}
+
+  \indexspace
+  \bigletter B
+  \item \spxentry{bindSocket()}\spxextra{in module main\_server}, \hyperpage{4}
+  \item \spxentry{bindSocket()}\spxextra{in module server}, \hyperpage{6}
+
+  \indexspace
+  \bigletter C
+  \item \spxentry{change\_status()}\spxextra{sql.Database method}, \hyperpage{8}
+  \item \spxentry{check\_groupname()}\spxextra{sql.Database method}, \hyperpage{8}
+  \item \spxentry{check\_user\_in\_group()}\spxextra{sql.Database method}, \hyperpage{8}
+  \item \spxentry{check\_username()}\spxextra{sql.Database method}, \hyperpage{9}
+  \item \spxentry{client}\spxextra{module}, \hyperpage{1}
+  \item \spxentry{close\_connection()}\spxextra{sql.Database method}, \hyperpage{9}
+  \item \spxentry{create\_group()}\spxextra{in module client}, \hyperpage{1}
+  \item \spxentry{create\_group()}\spxextra{in module server}, \hyperpage{6}
+  \item \spxentry{create\_group\_database()}\spxextra{sql.Database method}, \hyperpage{9}
+  \item \spxentry{create\_user()}\spxextra{sql.Database method}, \hyperpage{9}
+  \item \spxentry{createServer()}\spxextra{in module main\_server}, \hyperpage{4}
+  \item \spxentry{createServer()}\spxextra{in module server}, \hyperpage{6}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{Database}\spxextra{class in sql}, \hyperpage{8}
+  \item \spxentry{decrypt()}\spxextra{in module newencrypt}, \hyperpage{5}
+  \item \spxentry{delete\_member()}\spxextra{in module client}, \hyperpage{1}
+  \item \spxentry{delete\_member()}\spxextra{in module server}, \hyperpage{6}
+  \item \spxentry{delete\_user\_in\_group()}\spxextra{sql.Database method}, \hyperpage{9}
+  \item \spxentry{disconnect()}\spxextra{in module client}, \hyperpage{1}
+  \item \spxentry{disconnect()}\spxextra{in module main\_server}, \hyperpage{4}
+  \item \spxentry{disconnect()}\spxextra{in module server}, \hyperpage{6}
+
+  \indexspace
+  \bigletter E
+  \item \spxentry{encrypt()}\spxextra{in module newencrypt}, \hyperpage{5}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{generatekeys()}\spxextra{in module newencrypt}, \hyperpage{5}
+  \item \spxentry{genkeys()}\spxextra{in module grpencrypt}, \hyperpage{3}
+  \item \spxentry{get\_all\_users()}\spxextra{sql.Database method}, \hyperpage{9}
+  \item \spxentry{get\_key()}\spxextra{sql.Database method}, \hyperpage{9}
+  \item \spxentry{get\_status()}\spxextra{sql.Database method}, \hyperpage{10}
+  \item \spxentry{getServer()}\spxextra{in module client}, \hyperpage{1}
+  \item \spxentry{group\_decrypt()}\spxextra{in module grpencrypt}, \hyperpage{3}
+  \item \spxentry{group\_encrypt()}\spxextra{in module grpencrypt}, \hyperpage{3}
+  \item \spxentry{grpencrypt}\spxextra{module}, \hyperpage{3}
+
+  \indexspace
+  \bigletter I
+  \item \spxentry{isAdmin()}\spxextra{sql.Database method}, \hyperpage{10}
+
+  \indexspace
+  \bigletter L
+  \item \spxentry{leave\_group()}\spxextra{in module client}, \hyperpage{1}
+  \item \spxentry{leave\_group()}\spxextra{in module server}, \hyperpage{6}
+  \item \spxentry{loGin()}\spxextra{in module client}, \hyperpage{2}
+  \item \spxentry{loginpage()}\spxextra{in module main\_server}, \hyperpage{4}
+  \item \spxentry{loginpage()}\spxextra{in module server}, \hyperpage{6}
+
+  \indexspace
+  \bigletter M
+  \item \spxentry{main\_server}\spxextra{module}, \hyperpage{4}
+  \item \spxentry{make\_groups\_table()}\spxextra{sql.Database method}, \hyperpage{10}
+  \item \spxentry{make\_users\_table()}\spxextra{sql.Database method}, \hyperpage{10}
+  \item \spxentry{message\_ret()}\spxextra{sql.Database method}, \hyperpage{10}
+  \item \spxentry{message\_retrieval()}\spxextra{in module server}, \hyperpage{6}
+  \item \spxentry{message\_sent\_to\_group()}\spxextra{sql.Database method}, \hyperpage{10}
+  \item \spxentry{message\_sent\_to\_user()}\spxextra{sql.Database method}, \hyperpage{10}
+
+  \indexspace
+  \bigletter N
+  \item \spxentry{newencrypt}\spxextra{module}, \hyperpage{5}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{private\_key\_getting()}\spxextra{in module grpencrypt}, \hyperpage{3}
+  \item \spxentry{private\_key\_storing()}\spxextra{in module grpencrypt}, \hyperpage{3}
+  \item \spxentry{public\_key\_getting()}\spxextra{in module grpencrypt}, \hyperpage{4}
+  \item \spxentry{public\_key\_storing()}\spxextra{in module grpencrypt}, \hyperpage{4}
+
+  \indexspace
+  \bigletter R
+  \item \spxentry{random()}\spxextra{in module main\_server}, \hyperpage{4}
+  \item \spxentry{rec\_image()}\spxextra{in module client}, \hyperpage{2}
+  \item \spxentry{rec\_query()}\spxextra{in module main\_server}, \hyperpage{4}
+  \item \spxentry{rec\_query()}\spxextra{in module server}, \hyperpage{7}
+  \item \spxentry{rec\_text()}\spxextra{in module client}, \hyperpage{2}
+  \item \spxentry{return\_a\_server()}\spxextra{in module main\_server}, \hyperpage{5}
+
+  \indexspace
+  \bigletter S
+  \item \spxentry{save\_group\_keys()}\spxextra{in module client}, \hyperpage{2}
+  \item \spxentry{send\_group\_image()}\spxextra{in module client}, \hyperpage{2}
+  \item \spxentry{send\_group\_image()}\spxextra{in module server}, \hyperpage{7}
+  \item \spxentry{send\_group\_text()}\spxextra{in module client}, \hyperpage{2}
+  \item \spxentry{send\_group\_text()}\spxextra{in module server}, \hyperpage{7}
+  \item \spxentry{send\_image()}\spxextra{in module client}, \hyperpage{2}
+  \item \spxentry{send\_image()}\spxextra{in module server}, \hyperpage{7}
+  \item \spxentry{send\_key()}\spxextra{in module server}, \hyperpage{7}
+  \item \spxentry{send\_text()}\spxextra{in module client}, \hyperpage{2}
+  \item \spxentry{send\_text()}\spxextra{in module server}, \hyperpage{7}
+  \item \spxentry{server}\spxextra{module}, \hyperpage{6}
+  \item \spxentry{signup()}\spxextra{in module client}, \hyperpage{3}
+  \item \spxentry{signuppage()}\spxextra{in module main\_server}, \hyperpage{5}
+  \item \spxentry{signuppage()}\spxextra{in module server}, \hyperpage{7}
+  \item \spxentry{sql}\spxextra{module}, \hyperpage{8}
+  \item \spxentry{store\_key()}\spxextra{in module main\_server}, \hyperpage{5}
+  \item \spxentry{store\_key()}\spxextra{in module server}, \hyperpage{8}
+
+  \indexspace
+  \bigletter T
+  \item \spxentry{talk()}\spxextra{in module client}, \hyperpage{3}
+  \item \spxentry{talk()}\spxextra{in module main\_server}, \hyperpage{5}
+  \item \spxentry{talk()}\spxextra{in module server}, \hyperpage{8}
+
+  \indexspace
+  \bigletter U
+  \item \spxentry{update\_key()}\spxextra{sql.Database method}, \hyperpage{11}
+
+\end{sphinxtheindex}

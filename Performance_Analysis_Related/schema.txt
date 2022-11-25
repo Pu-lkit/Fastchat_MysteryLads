@@ -1,0 +1,27 @@
+## SCHEMA FOR DATABASE
+
+@ TABLES:
+
+>> Users
+username, TEXT, PRIMARY KEY
+password, TEXT
+isOnline, INT
+publicKey, TEXT
+
+
+>> Groups
+groupname, TEXT, PRIMARY KEY
+publicKey, TEXT
+
+
+>> table<UserName>		(e.g. tableHenry for user Henry)
+otherusername, TEXT, PRIMARY KEY
+message, TEXT
+
+
+>> groupusers<GroupName>	(e.g. groupusersHASH for group HASH)
+username, TEXT, PRIMARY KEY
+isAdmin, INT
+
+
+
